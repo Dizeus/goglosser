@@ -748,7 +748,7 @@ body {
   position: relative;
 }
 
-@media (min-width: 479.98px) {
+@media (min-width: 767.98px) {
   .talk-experts__illustration:hover .talk-experts__block01 {
     top: -30px;
     right: 90px;
@@ -855,17 +855,11 @@ body {
           transform: translate(50%, 0) rotate(-30deg);
 }
 
-@media (max-width: 767.98px) {
-  .talk-experts__block01 {
-    display: none;
-  }
-}
-
 .talk-experts__block02 {
   width: 96px;
   height: 96px;
   top: 0;
-  left: 416px;
+  left: 45%;
   -webkit-transform: translate(0, -40%) rotate(105deg);
           transform: translate(0, -40%) rotate(105deg);
 }
@@ -968,7 +962,7 @@ body {
   }
 }
 
-@media (min-width: 479.98px) {
+@media (min-width: 767.98px) {
   .talk-experts__video:hover {
     opacity: 0.8;
     -webkit-transform: scale(1.05);
@@ -1274,6 +1268,7 @@ body {
 .footer__appstore, .footer__playmarket {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  width: 160px;
 }
 
 @media (max-width: 479.98px) {
@@ -1287,6 +1282,10 @@ body {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
+}
+
+.footer__appstore {
+  width: 170px;
 }
 
 @media (max-width: 767.98px) {
