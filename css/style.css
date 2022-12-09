@@ -255,7 +255,7 @@ body {
   text-transform: uppercase;
   color: #000000;
   position: relative;
-  z-index: 4;
+  z-index: 3;
 }
 
 @media (max-width: 767.98px) {
@@ -293,6 +293,7 @@ body {
   }
   .header .navbar .navbar__link {
     font-size: 20px;
+    z-index: 2;
   }
 }
 
@@ -319,7 +320,7 @@ body {
   position: fixed;
   background-color: rgba(250, 251, 253, 0.95);
   border-radius: 0 0 25px 25px;
-  z-index: 1;
+  z-index: 3;
 }
 
 .header__button {
@@ -486,7 +487,7 @@ body {
   .take-care .video:hover .video__icon {
     background-color: #4285F4;
   }
-  .take-care .video:hover .video__title a {
+  .take-care .video:hover .video__title {
     color: #4285F4;
   }
 }
@@ -509,7 +510,7 @@ body {
   stroke-width: 1px;
 }
 
-.take-care .video__title a {
+.take-care .video__title {
   font-size: 13px;
   line-height: 126%;
   letter-spacing: 0.08em;
