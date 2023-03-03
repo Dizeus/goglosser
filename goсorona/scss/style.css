@@ -1006,3 +1006,38 @@ body {
   padding-right: 15px;
   padding-left: 15px;
 }
+
+
+.geocoder {
+  background-color: #4285F4;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.geocoder__text {
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.geocoder__link {
+  padding: 5px;
+  font-size: 30px;
+  font-weight: 500;
+  background-color: #79a5ed;
+  border-radius: 5px;
+  color: whitesmoke;
+  animation: pulse 1s ease 0s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #79a5ed;
+    padding: 5px;
+  }
+  100% {
+    background-color: #4285F4;
+    padding: 10px;
+  }
+}
