@@ -1,9 +1,10 @@
-//--------------------------------- Обнул -----------------------------------------//
+//--------------------------------- Nullstyle -----------------------------------------//
 @import "nullstyle.scss";
 
-//-------------------------------- Шрифти -----------------------------------------//
+//-------------------------------- Fonts -----------------------------------------//
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700;800&family=Rubik:wght@400;700&display=swap');
+
 //--------------------------------------------------------------------------//
 
 body{
@@ -185,11 +186,13 @@ html {
 				justify-content: end;
 			}
 			@media (max-width:299.98px){
-				.button_blue{
+				.blue-button{
 					min-width: 110px;
 					width: 110px;
 				}
 			}
+			
+
 		}
 	@media (min-width:767.98px){
 		&__logo:hover{
@@ -859,6 +862,9 @@ html {
 		}
 		&__appstore{
 			width: 170px;
+			@media (max-width:479.98px){
+				width: 130px;
+			}
 		}
 
 		
@@ -873,7 +879,7 @@ html {
 
 
 
-//-------------------------------- Блоки -----------------------------------------//
+//-------------------------------- blocks -----------------------------------------//
 .title {
 	padding-bottom: 12px;
 	font-weight: 700;
@@ -921,58 +927,26 @@ html {
 			background: #be474f;
 		}
 	}
-		&_blue {
-			background: #4285F4;
-			min-width: 144px;
-			&:active{
-				background: #80acf4;
-			}
-			@media (min-width:767.98px){
-				&:hover{
-					background: #315fa9;
-				}
-			}
-		}
+		
 }
-//-------------------------------- Контейнер -----------------------------------------//
+.blue-button{
+	background: #4285F4;
+	min-width: 144px;
+	
+	&:active {
+		background: #80acf4;
+	}
+	
+	@media (min-width:767.98px) {
+		&:hover {
+			background: #315fa9;
+		}
+	}
+}
+//-------------------------------- Container -----------------------------------------//
 [class*="__container"]{
 	max-width: 1057px;
 	margin: 0 auto;
 	padding-right: 15px;
 	padding-left: 15px;
-}
-
-//------------------------ Geocoder -----------------------------------------------------//
-
-.geocoder {
-	background-color: #4285F4;
-	height: 100px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-		&__text {
-			color: whitesmoke;
-			display: flex;
-			align-items: center;
-			column-gap: 10px;
-		}
-		&__link {
-			padding: 5px;
-			font-size: 30px;
-			font-weight: 500;
-			background-color: #79a5ed;
-			border-radius: 5px;
-			color: whitesmoke;
-			animation: pulse 1s ease 0s infinite alternate;
-		}
-}
-@keyframes pulse{
-	0%{
-		background-color: #79a5ed;
-		padding: 5px;
-	}
-	100%{
-		background-color: #4285F4;
-		padding: 10px;
-	}
 }

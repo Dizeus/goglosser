@@ -81,6 +81,10 @@ body {
   font-size: 12px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   min-height: 100%;
   display: flex;
@@ -266,7 +270,7 @@ body {
   }
 }
 @media (max-width: 299.98px) {
-  .header__button .button_blue {
+  .header__button .blue-button {
     min-width: 110px;
     width: 110px;
   }
@@ -928,6 +932,11 @@ body {
 .footer__appstore {
   width: 170px;
 }
+@media (max-width: 479.98px) {
+  .footer__appstore {
+    width: 130px;
+  }
+}
 
 @media (max-width: 767.98px) {
   .lock {
@@ -987,15 +996,16 @@ body {
     background: #be474f;
   }
 }
-.button_blue {
+
+.blue-button {
   background: #4285F4;
   min-width: 144px;
 }
-.button_blue:active {
+.blue-button:active {
   background: #80acf4;
 }
 @media (min-width: 767.98px) {
-  .button_blue:hover {
+  .blue-button:hover {
     background: #315fa9;
   }
 }
@@ -1005,38 +1015,4 @@ body {
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
-}
-
-.geocoder {
-  background-color: #4285F4;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.geocoder__text {
-  color: whitesmoke;
-  display: flex;
-  align-items: center;
-  column-gap: 10px;
-}
-.geocoder__link {
-  padding: 5px;
-  font-size: 30px;
-  font-weight: 500;
-  background-color: #79a5ed;
-  border-radius: 5px;
-  color: whitesmoke;
-  animation: pulse 1s ease 0s infinite alternate;
-}
-
-@keyframes pulse {
-  0% {
-    background-color: #79a5ed;
-    padding: 5px;
-  }
-  100% {
-    background-color: #4285F4;
-    padding: 10px;
-  }
 }
