@@ -1,5 +1,4 @@
-@charset "UTF-8";
-/*Обнуление*/
+/*Nullstyle*/
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600;700;800&family=Rubik:wght@400;700&display=swap");
 * {
   padding: 0;
@@ -139,12 +138,8 @@ html {
 .header__logo {
   position: relative;
   z-index: 4;
-}
-@media (max-width: 479.98px) {
-  .header__logo {
-    flex: 0 0 40px;
-    overflow: hidden;
-  }
+  flex: 0 0 40px;
+  overflow: hidden;
 }
 .header__burger {
   display: flex;
